@@ -81,6 +81,8 @@
             <div>
                 <strong>What is a call stack and event loop in javascript ?</strong>
                 <p>
+                    Answer:We all know javascript is a single threaded asynchronous language. So when we have to call something asynchronous function then we have to wait for it. We know that javascript gives output by the call stack. Call stack works in a way that all the output stores in the stack and call stack serve the output one by one like a stack. But when an async function enters in the call stack then all the call stack works stuck because of it. Because async functions need time to serve the output. In that case an event loop comes in. It vanish the async function from the call stack and sends it to the event queue, and when all the call stack is empty then the event loop passes the async function output to the call stack and the call stack shows the output to the browser. In that case, the browser doesn’t get stuck when async calling.
+
 
                 </p>
             </div>
